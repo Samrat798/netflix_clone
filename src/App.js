@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignUpPage from "./pages/SignUpPage";
+import BrowsePage from "./pages/BrowsePage";
+import HomePage from "./pages/HomePage";
+import SignInPage from "./pages/SignInPage";
+// import { userAuthListner } from "./components/content/userAuthListner";
 
 function App() {
+  // const { user } = userAuthListner();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signin" element={<SignInPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/home" element={<BrowsePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
