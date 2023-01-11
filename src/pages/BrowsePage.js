@@ -1,8 +1,8 @@
-import Nav from "../components/MainPage/Nav";
-import Banner from "../components/MainPage/Banner";
+import Nav from "../components/Mainpage/Nav";
+import Banner from "../components/Mainpage/Banner";
 import requests from "../Api/requests";
-import Row from "../components/MainPage/Row";
-import "../components/MainPage/Row.css";
+import Row from "../components/Mainpage/Row";
+import "../components/Mainpage/Row.css";
 import Footer from "../components/Footer/Footer";
 
 const BrowsePage = () => {

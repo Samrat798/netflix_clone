@@ -4,7 +4,6 @@ import FAQ from "../components/homepage/faq/FAQ";
 import Header from "../components/homepage/Header";
 import Line from "../components/helper/Line";
 import Footer from "../components/Footer/Footer";
-import "../components/homepage/Home.css";
 
 function HomePage() {
   return (
